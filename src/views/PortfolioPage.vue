@@ -5,7 +5,6 @@
   <title>Portfolio for Rebecka Oscarsson, Front End Developer</title>
   <meta name="description" content="Links to my projects on github">
   <meta name="author" content="Rebecka Oscarsson">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@600&display=swap"
     rel="stylesheet">
@@ -20,7 +19,7 @@
       <div class="overlay">
         <div class="imageText">Weirdopedia (React.js)</div>
       </div>
-      <img src="weirdopedia.jpg"
+      <img src="@/assets/weirdopedia.jpg"
           alt="a deformed looking polarbear"></a>
       <figcaption>Weirdopedia (React.js)</figcaption>
     </figure>
@@ -29,7 +28,7 @@
       <div class="overlay">
         <div class="imageText">Chat (Node, React, socket.io)</div>
       </div>
-      <img src="jelly.png"
+      <img src="@/assets/jelly.png"
           alt="a jellyfish with a speech bubble"></a>
       <figcaption>Chat (Node, React, socket.io)</figcaption>
     </figure>
@@ -38,7 +37,7 @@
       <div class="overlay">
         <div class="imageText">Kiwi game (Javascript)</div>
       </div>
-      <img src="kiwi.png"
+      <img src="@/assets/kiwi.png"
           alt="a blue kiwibird standing by two palmtrees"></a>
       <figcaption>Kiwi game (Javascript)</figcaption>
     </figure>
@@ -56,7 +55,7 @@
       <div class="overlay">
         <div class="imageText">Starwars (Javascript, API)</div>
       </div>
-      <img src="starwars.jpg"
+      <img src="@/assets/starwars.jpg"
           alt="starwars website with loads of info"></a>
       <figcaption>Starwars (Javascript, API)</figcaption>
     </figure>
@@ -65,7 +64,7 @@
       <div class="overlay">
         <div class="imageText">Creatures: art by Arci Taube (Javascript, SVG)</div>
       </div>
-      <img src="creatures.png"
+      <img src="@/assets/creatures.png"
           alt="platypus outline made in a drawing program"></a>
       <figcaption>Creatures: art by Arci Taube (Javascript, SVG)</figcaption>
     </figure>
@@ -74,7 +73,7 @@
       <div class="overlay">
         <div class="imageText">Tv-room: videos by me (Css)</div>
       </div>
-      <img src="fjurp.jpg" alt="a tv showing a nature program">
+      <img src="@/assets/fjurp.jpg" alt="a tv showing a nature program">
     </a>
     <figcaption>Tv-room (Css, videos by me)</figcaption>
   </figure>

@@ -5,8 +5,6 @@
   <title>Rebecka Oscarsson, Front End Developer, my skills</title>
   <meta name="description" content="I know HTML CSS and JavaScript">
   <meta name="author" content="Rebecka Oscarsson">
-
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@600&display=swap"
     rel="stylesheet">

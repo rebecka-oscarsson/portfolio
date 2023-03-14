@@ -3,8 +3,6 @@
   <meta charset="utf-8">
   <title>Contact Rebecka Oscarsson, Front End Developer</title>
   <meta name="author" content="Firstname Lastname">
-
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@600&display=swap"
     rel="stylesheet">
