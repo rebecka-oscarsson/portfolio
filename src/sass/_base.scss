@@ -9,9 +9,9 @@ $fillColor: rgba(189, 86, 3, 0.3);
 $accentColor: rgb(209, 95, 2);
 $discreetColor: rgba(114, 33, 1, 0.6);
 $overlayColor: rgba(255, 255, 255, 0.8);
-$plantColor: rgba(114, 1, 86, 0.6);
+$plantColor: rgba(114, 1, 86, 0.5);
 
-html.main-page {
+html {
     background-color: $backgroundColor; //fallback
     background-image: linear-gradient(to right, $backgroundColor, white 50%, $backgroundColor);
 }
@@ -46,6 +46,8 @@ header {
     grid-row: 1/2;
     grid-column: 1/2;
     padding: $paddingSmall $paddingSmall 0 $paddingSmall;
+    display:flex;
+    justify-content: space-between;
 }
 
 .rotate {
@@ -63,7 +65,7 @@ header {
 main {
     grid-row: 2/3;
     grid-column: 1/2;
-    text-align: right;
+    //text-align: right;
     border: none;
     position: relative;
     display:block;
@@ -72,11 +74,11 @@ main {
     -webkit-overflow-scrolling: touch;
 }
 
-.main__link-back {
+.menu-icon {
     display:inline-flex;
     position: relative;
     z-index: 2;
-    margin-right: 2rem;
+    //margin-right: 2rem;
     text-transform: uppercase;
     padding: 0.5rem;
     background-color: $backgroundColor;
@@ -87,7 +89,7 @@ main {
     font-size: 0.85rem;
 }
 
-.main__link-back i {font-size: 2rem;}
+.menu-icon i {font-size: 2rem;}
 
 iframe {
     border: none;
@@ -166,7 +168,7 @@ nav {
 
 
 
-object {
+nav > svg {
     width: 90%;
     height: auto;
     margin: auto auto 0 auto;
@@ -174,7 +176,7 @@ object {
     display: block;
 }
 
-.menuClicked {height: 0};
+.menuClosed {height: 0};
 
 a {
     color: $accentColor;
@@ -186,17 +188,17 @@ a text {
     color: black;
 }
 
-a:visited text{
-    fill: $discreetColor;
-}
+// a:visited text{
+//     fill: $discreetColor;
+// }
 
-a:visited .details {
-    stroke: $discreetColor;
-}
+// a:visited .details {
+//     stroke: $discreetColor;
+// }
 
-a:active text {fill: $accentColor}
+// a:active text {fill: $accentColor}
 
-a:active .edge {stroke: $accentColor}
+// a:active .edge {stroke: $accentColor}
 
 .outline {
     stroke: black;
@@ -207,14 +209,24 @@ a:active .edge {stroke: $accentColor}
     fill: white;
 }
 
-a:hover>text {
+g:hover>text {
     -webkit-filter: drop-shadow(3px 3px 6px $accentColor);
     filter: drop-shadow(3px 3px 6px $accentColor);
 }
 
-a:hover .midnerve {fill: plum}
-a:hover .edge {fill: $fillColor; transition: fill 0.4s;} //fallback
-a:hover .edge {fill: url("#gradient");}
+.clickable:hover {cursor:pointer}
+
+.clickable:hover .midnerve {fill: plum}
+.clickable:hover .edge {fill: $fillColor; transition: fill 0.4s;} //fallback
+//a:hover .edge {fill: url("#gradient");}
+
+.active .midnerve {fill: plum}
+.active .edge {fill: $fillColor; transition: fill 0.4s;} //fallback
+.active .edge {fill: url("#gradient");}
+g.active text {
+    -webkit-filter: drop-shadow(3px 3px 6px $accentColor);
+    filter: drop-shadow(3px 3px 6px $accentColor);
+}
 
 iframe a {
     font-weight: bold;

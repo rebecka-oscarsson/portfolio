@@ -11,7 +11,7 @@
     <!-- <script src="script.js" defer></script> -->
 </head>
 
-<body class="subpage__body">
+<div class="subpage__body">
   <h2>Portfolio</h2>
   <section class="subpage__section-portfolio">
 
@@ -79,5 +79,5 @@
   </figure>
 
   </section>
-</body>
+</div>
 </template>

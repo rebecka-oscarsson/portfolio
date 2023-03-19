@@ -10,7 +10,7 @@
     rel="stylesheet">
 </head>
 
-<body class="subpage__body">
+<div class="subpage__body">
   <section>
   <h2>Skills</h2>
   <ul>
@@ -28,6 +28,6 @@
     <li>Accessibility</li>
   </ul>
 </section>
-</body>
+</div>
 
 </template>

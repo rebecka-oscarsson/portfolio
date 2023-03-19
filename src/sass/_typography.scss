@@ -19,10 +19,18 @@ h1 {
 
 a > h1 {color:black}
 
-h1,
-h2 {
+h1 {
     font-family: $headlineFont;
     font-weight: normal;
+}
+
+h2 {
+    font-family: $mainFont;
+    font-weight: normal;
+    width: fit-content;
+    padding: 0.3rem;
+    background: linear-gradient(0deg, $fillColor 0%, $fillColor 7%, transparent 20%);
+    //background-color: $fillColor;
 }
 
 h2,
@@ -60,6 +68,6 @@ h1>span {
     }
 
     .subpage__body {
-        line-height: 2rem
+        line-height: 2.5rem; font-size: 1.5rem;
     }
 }

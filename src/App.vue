@@ -1,45 +1,31 @@
-<script setup>console.log(process.env.NODE_ENV);</script>
 <template>
-  <nav>
-    <img src="@/assets/plant.svg">
-    <!-- <object data="@/assets/plant.svg" type="image/svg+xml"> -->
-        <!-- <div class = "ie-nav-fallback">
-        <a href="about.html" target="iframe">about me</a>
-        <a href="skills.html" target="iframe">skills</a>
-        <a href="portfolio.html" target="iframe">portfolio</a>
-        <a href="contact.html" target="iframe">contact</a>
-        </div> -->
-      <!-- </object> -->
-      <router-link to="/portfolio">Portfolio</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/contact">Contact</router-link> |
-      <router-link to="/skills">Skills</router-link>
-    </nav>
-  <router-view />
+  <div class="index">
+    <div class="container">
+      <PageHeader @menu-clicked="changeMenu" />
+      <NavPlant :menuOpen="menuOpen" @menu-clicked="changeMenu"/>
+      <!-- <router-link to="/portfolio">Portfolio</router-link> |
+            <router-link to="/about">About</router-link> |
+            <router-link to="/contact">Contact</router-link> |
+            <router-link to="/skills">Skills</router-link> -->
+
+      <main>
+        <router-view />
+      </main>
+    </div>
+  </div>
 </template>
 
-<!-- <body class="index">
+<script setup>
+import { ref } from "vue";
+import NavPlant from '@/components/NavPlant.vue';
+import PageHeader from '@/components/PageHeader.vue';
+import router from '@/router';
+const menuOpen = ref(true);
+function changeMenu() { menuOpen.value = !menuOpen.value }
+router.beforeEach(() => {if(menuOpen.value) {menuOpen.value=false}
+})
+</script>
 
-  <div class="container">
-
-    <nav>
-      <object data="plant.svg" type="image/svg+xml">
-        <div class = "ie-nav-fallback">
-        <a href="about.html" target="iframe">about me</a>
-        <a href="skills.html" target="iframe">skills</a>
-        <a href="portfolio.html" target="iframe">portfolio</a>
-        <a href="contact.html" target="iframe">contact</a>
-        </div>
-      </object>
-    </nav>
-    <header>
-      <a href=""><h1><span class="rotate">Resumé</span>Rebecka Oscarsson</h1></a>
-    </header>
-    <main>
-      <a href="javascript:void(0)" class="main__link-back hidden" aria-label="Go back"><i class="fas fa-seedling"></i>menu</a>
-      <iframe name="iframe" title="main content"></iframe>
-    </main>
-
-  </div>
-
-</body> -->
+<style lang="scss">
+@import "./sass/style.scss";
+</style>

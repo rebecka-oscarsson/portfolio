@@ -8,7 +8,7 @@
     rel="stylesheet">
 </head>
 
-<body class="subpage__body">
+<div class="subpage__body">
   <section>
   <h2>Contact me</h2>
   <ul>
@@ -16,5 +16,5 @@
     <li>LinkedIn: <a href="https://www.linkedin.com/in/rebecka-oscarsson" target ="new">Rebecka Oscarsson</a></li>
   </ul>
 </section>
-</body>
+</div>
 </template>
