@@ -29,10 +29,10 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
-  {
-    path: "/:catchAll(.*)",
-    component: NotFound,
-  },
+  // {
+  //   path: "/:catchAll(.*)",
+  //   component: NotFound,
+  // },
 ];
 
 const router = createRouter({
