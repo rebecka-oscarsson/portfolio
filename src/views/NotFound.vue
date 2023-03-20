@@ -1,3 +1,8 @@
 <template>
-  <h1>The page you're looking for doesn't exist.</h1>
+  <section>
+  <h2>Page not found</h2>
+  <p>
+    Please pick another one in the link tree
+  </p>
+</section>
 </template>

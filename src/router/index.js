@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";import About from "@
 import Portfolio from "@/views/PortfolioPage.vue";
 import Skills from "@/views/SkillsPage.vue";
 import Contact from "@/views/ContactPage.vue";
-//import NotFound from "@/views/NotFound.vue";
+import NotFound from "@/views/NotFound.vue";
 
 const routes = [
   {
@@ -29,10 +29,10 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
-  // {
-  //   path: "/:catchAll(.*)",
-  //   component: NotFound,
-  // },
+  {
+    path: "/:catchAll(.*)",
+    component: NotFound,
+  },
 ];
 
 const router = createRouter({
