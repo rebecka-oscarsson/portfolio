@@ -1,16 +1,5 @@
 <template>
 
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio for Rebecka Oscarsson, Front End Developer</title>
-  <meta name="description" content="Links to my projects on github">
-  <meta name="author" content="Rebecka Oscarsson">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@600&display=swap"
-    rel="stylesheet">
-    <!-- <script src="script.js" defer></script> -->
-</head>
-
 <div class="subpage__body">
   <h2>Portfolio</h2>
   <section class="subpage__section-portfolio">
