@@ -193,11 +193,11 @@ const wasClicked = linkName => clicked.value === linkName ? true : false;
 </script>
 
 <style lang="scss" scoped>
-#Skills.clicked {animation: alternate 1 0.2s ease-in-out grow; transform-origin:247px 241px};
-#About.clicked { animation: alternate 1 0.2s ease-in-out grow; transform-origin:212px 191px}
-#Contact.clicked {animation: alternate 1 0.2s ease-in-out grow; transform-origin:225px 519px}
-#Portfolio.clicked {animation: alternate 1 0.2s ease-in-out grow; transform-origin:218px 378px}
-@keyframes grow {
+#Skills.clicked {animation: alternate 1 0.2s ease-in-out boink; transform-origin:247px 241px};
+#About.clicked { animation: alternate 1 0.2s ease-in-out boink-left; transform-origin:212px 191px}
+#Contact.clicked {animation: alternate 1 0.2s ease-in-out boink; transform-origin:225px 519px}
+#Portfolio.clicked {animation: alternate 1 0.2s ease-in-out boink-left; transform-origin:218px 378px}
+@keyframes boink {
   0%, 100% {
     transform: rotate(0deg);
   }
@@ -207,4 +207,16 @@ const wasClicked = linkName => clicked.value === linkName ? true : false;
   80% {
     transform: rotate(-1deg);
   }
- }</style>
+ }
+ @keyframes boink-left{
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+ }
+ </style>
