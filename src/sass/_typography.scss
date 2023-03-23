@@ -29,14 +29,19 @@ h2 {
     font-weight: normal;
     width: fit-content;
     padding: 0.3rem;
-    background: linear-gradient(0deg, $fillColor 0%, $fillColor 7%, transparent 20%);
-    //background-color: $fillColor;
 }
 
+h2:after {
+        content: "";
+        float: left;
+        background: $fillColor;
+        width: 100%;
+        height: 5px;
+        border-radius: 3px;
+      }
 h2,
 text {
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;   
 }
 
 h1>span {
