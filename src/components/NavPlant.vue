@@ -1,14 +1,14 @@
 <template>
   <nav :class="{ 'menuClosed': !menuOpen }">
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 444.8917 791.6977" >
-    <g transform="translate(-9.465 64.5824)">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 464.892 807.728" >
+    <g transform="translate(.535 76.913)">
       <defs>
         <linearGradient id="gradient" x1="-20%" y1="0%" x2="0%" y2="100%">
           <stop offset="30%" style="stop-color:rgba(189, 86, 3, 0.4);stop-opacity:1" />
           <stop offset="100%" style="stop-color:rgba(114, 1, 86, 0.6);stop-opacity:0.7" />
         </linearGradient>
       </defs>
-      <g transform="translate(-2.0203 3.0305)" id="About" @click="navigate" class="clickable" :class="{ 'active': isActive('About'), 'clicked': wasClicked('About') }">
+      <g id="About" @click="navigate" class="clickable" :class="{ 'active': isActive('About'), 'clicked': wasClicked('About') }">
         <text x="84.0665" y="-84.6209" class="link" font-family="Gentium Book Basic" font-style="italic" font-weight="400"
           style="-inkscape-font-specification:'Gentium Book Basic, Italic'; font-variant-ligatures:normal; font-variant-caps:normal; font-variant-numeric:normal; font-variant-east-asian:normal"
           transform="rotate(18)">
@@ -193,11 +193,12 @@ const wasClicked = linkName => clicked.value === linkName ? true : false;
 </script>
 
 <style lang="scss" scoped>
-#Skills.clicked {animation: alternate 1 0.2s ease-in-out boink; transform-origin:247px 241px};
-#About.clicked { animation: alternate 1 0.2s ease-in-out boink-left; transform-origin:212px 191px}
-#Contact.clicked {animation: alternate 1 0.2s ease-in-out boink; transform-origin:225px 519px}
-#Portfolio.clicked {animation: alternate 1 0.2s ease-in-out boink-left; transform-origin:218px 378px}
-@keyframes boink {
+#Skills.clicked {animation: alternate 1 0.2s ease-in-out pressdown; transform-origin:247px 241px};
+#About.clicked { animation: alternate 1 0.2s ease-in-out pressaway; transform-origin:212px 191px}
+#Contact.clicked {animation: alternate 1 0.2s ease-in-out pressdown; transform-origin:225px 519px}
+#Portfolio.clicked {animation: alternate 1 0.2s ease-in-out pressdownleft; transform-origin:218px 378px}
+
+@keyframes pressdown {
   0%, 100% {
     transform: rotate(0deg);
   }
@@ -208,7 +209,8 @@ const wasClicked = linkName => clicked.value === linkName ? true : false;
     transform: rotate(-1deg);
   }
  }
- @keyframes boink-left{
+
+ @keyframes pressdownleft{
   0%, 100% {
     transform: rotate(0deg);
   }
@@ -217,6 +219,18 @@ const wasClicked = linkName => clicked.value === linkName ? true : false;
   }
   80% {
     transform: rotate(1deg);
+  }
+ }
+
+ @keyframes pressaway{
+  0%, 100% {
+    transform: rotateY(0deg);
+  }
+  45% {
+    transform: perspective(1000px) rotateY(-15deg);
+  }
+  80% {
+    transform: perspective(1000px) rotateY(10deg);
   }
  }
  </style>

@@ -207,6 +207,16 @@ a text {
 
 .edge {
     fill: white;
+    transition: fill 0.3s;
+}
+
+.midnerve {
+    fill: white;
+    transition: fill 0.3s;
+}
+
+text { 
+    transition: fill 0.3s;
 }
 
 g:hover>text {
@@ -214,14 +224,13 @@ g:hover>text {
     filter: drop-shadow(3px 3px 6px $accentColor);
 }
 
-.clickable:hover {cursor:pointer}
+.clickable:hover {cursor:pointer; transition: fill 1.4s;}
 
-.clickable:hover .midnerve {fill: plum}
-.clickable:hover .edge {fill: $fillColor; transition: fill 0.4s;} //fallback
-//a:hover .edge {fill: url("#gradient");}
+.clickable:hover .midnerve {fill: plum;}
+.clickable:hover .edge {fill: $fillColor;}
 
-.active .midnerve {fill: plum}
-.active .edge {fill: $fillColor; transition: fill 0.4s;} //fallback
+.active .midnerve {fill: plum;} //fallback
+.active .edge {fill: $fillColor;} //fallback
 .active .edge {fill: url("#gradient");}
 g.active text {
     -webkit-filter: drop-shadow(3px 3px 6px $accentColor);
