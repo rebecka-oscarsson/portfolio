@@ -156,6 +156,7 @@ figure img {
   max-width: 200px;
   clip-path: ellipse(100% 100% at 50% -11%);
   filter: grayScale() sepia(50%) drop-shadow(-1rem -1rem 1rem rgba(black, 0.3));
+  margin:auto;
 }
 
 .about {
@@ -219,18 +220,6 @@ a text {
   fill: black;
   color: black;
 }
-
-// a:visited text{
-//     fill: $discreetColor;
-// }
-
-// a:visited .details {
-//     stroke: $discreetColor;
-// }
-
-// a:active text {fill: $accentColor}
-
-// a:active .edge {stroke: $accentColor}
 
 .outline {
   stroke: black;
