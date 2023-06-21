@@ -6,6 +6,7 @@
   <ul>
     <li>E-mail: <a :href="'mailto:'+ {rebecka}">{{ rebecka}}</a></li>
     <li>LinkedIn: <a href="https://www.linkedin.com/in/rebecka-oscarsson" target ="new">Rebecka Oscarsson</a></li>
+    <li>Github: <a href="https://github.com/rebecka-oscarsson" target ="new">rebecka-oscarsson</a></li>
   </ul>
 </section>
 </div>
