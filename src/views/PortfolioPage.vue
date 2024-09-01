@@ -3,15 +3,6 @@
     <h2>Portfolio</h2>
     <section class="subpage__section-portfolio">
 
-      <figure><a href="https://checkoutpoc.aws.postnord.com/" target="_blank">
-          <div class="overlay">
-            <div class="imageText">Internship project PostNord (Vue, API:s)</div>
-          </div>
-          <img src="@/assets/postnord.png" alt="Map of Gamla Stan with locations of post offices">
-        </a>
-        <figcaption>Internship project PostNord (Vue)</figcaption>
-      </figure>
-
       <figure><a href="https://glittery-mousse-4ca3b5.netlify.app/" target="_blank">
           <div class="overlay">
             <div class="imageText">A site using Headless CMS (React, Strapi)</div>
